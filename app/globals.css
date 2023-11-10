@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@1,300&family=Hind+Madurai:wght@300;400&family=Playfair+Display&family=REM:wght@100;600&family=Raleway:wght@700&family=Roboto:ital,wght@0,400;1,500&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap");
+
+body {
+  color: #fff;
+  background-color: #020312;
+}
+
+.bg {
+  background-color: #020312;
+}
+
+.text-color {
+  color: #ffffff;
+}
+
+.button-bg {
+  background-color: #f26c4f;
+}
+
+.roboto-text {
+  /* font-family: 'Fira Code', monospace;
+        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Hind Madurai', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'REM', sans-serif; */
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Work Sans', sans-serif; */
+}
+.roboto-box-title {
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* ======================================== min to max width ====================================== */
+.max-w-screen-xl {
+  max-width: 1450px;
+}
+.padding-x-40 {
+  padding: 0 25px !important;
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+  .upwork {
+    margin-right: 65px !important;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1500px) {
+}
+
+/* ------------ start ---------- */
+
+.gradient-rounded-top {
+  width: 643px;
+  height: 300px;
+  flex-shrink: 0;
+  filter: blur(295px);
+  position: absolute;
+  z-index: 1;
+  top: -100px;
+  background: #05137b;
+  border-radius: 882px;
+}
+/* --------------- footer -------- */
+.footer-gradient-rounded-top {
+  width: 343px;
+  height: 300px;
+  flex-shrink: 0;
+  filter: blur(150px);
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  background: #05137b;
+  border-radius: 882px;
+}
+
+/* ----- gradient Banner div start ---- */
+.gradient-rounded-div-left {
+  width: 643px;
+  height: 300px;
+  flex-shrink: 0;
+  filter: blur(295px);
+  position: absolute;
+
+  z-index: 1;
+  top: 150px;
+  background: #041067;
+  border-radius: 882px;
+}
+.gradient-rounded-div-right {
+  width: 643px;
+  height: 300px;
+  flex-shrink: 0;
+  filter: blur(295px);
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  background-color: #070727;
+}
+
+/* animations */
+.background_color_animation {
+  animation: rotateAndGlow 10s linear infinite,
+    moveBackground 20s linear infinite;
+}
+
+@keyframes rotateAndGlow {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(204, 4, 218, 0.826);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 30px #ce4f06;
+  }
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* --------- gradient div responsive ----------- */
+@media (min-width: 600px) and (max-width: 900px) {
+  .gradient-rounded-div-left {
+    width: 443px;
+    height: 220px;
+    flex-shrink: 0;
+    filter: blur(295px);
+    position: absolute;
+    top: 870px;
+  }
+  .gradient-rounded-div-right {
+    width: 443px;
+    height: 220px;
+    flex-shrink: 0;
+    filter: blur(295px);
+    position: absolute;
+    top: 870px;
+  }
+}
+@media (min-width: 200px) and (max-width: 600px) {
+  .gradient-rounded-div-left {
+    width: 283px;
+    height: 130px;
+    flex-shrink: 0;
+    filter: blur(215px);
+    position: absolute;
+    top: 970px;
+  }
+  .gradient-rounded-div-right {
+    width: 283px;
+    height: 130px;
+    flex-shrink: 0;
+    filter: blur(215px);
+    position: absolute;
+    top: 970px;
+  }
+}

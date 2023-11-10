@@ -1,0 +1,16 @@
+.totalwork-container {
+  background-image: url("../../app/assets/bg-man-sitting.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.hight-total {
+  height: 300px;
+}
+
+@media (max-width: 650px) {
+  .display-none {
+    display: none !important;
+  }
+}

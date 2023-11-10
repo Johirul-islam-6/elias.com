@@ -1,0 +1,12 @@
+@media (max-width: 950px) {
+  .frome-container {
+    flex-direction: column !important;
+  }
+  .frome-left-site {
+    width: 100% !important;
+  }
+  .frome-input-container {
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+}

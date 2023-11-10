@@ -1,0 +1,25 @@
+.hire-banner {
+  width: 100%;
+  min-height: 230px !important;
+  background-image: url("../../app/assets/bg-keyboard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.over-color-div {
+  width: 100%;
+  min-height: 230px !important;
+  background-color: #000000a4;
+}
+.hire-me-button {
+  color: #fff;
+  background-color: #f26c4f;
+}
+@media (max-width: 700px) {
+  .hire-banner {
+    min-height: 200px !important;
+  }
+  .over-color-div {
+    min-height: 200px !important;
+  }
+}
